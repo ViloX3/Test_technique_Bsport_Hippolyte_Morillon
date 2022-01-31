@@ -1,0 +1,19 @@
+.case {
+    width: 14%;
+    box-sizing: border-box;
+    border: solid 2px black;
+}
+
+.reservationContents {
+    box-sizing: border-box;
+    border: solid 1px black;
+    text-align: center;
+    min-height: 50px;
+    max-height: 250px;
+    overflow: auto;
+}
+
+h2 {
+    font-size: medium;
+    text-align: center;
+}
