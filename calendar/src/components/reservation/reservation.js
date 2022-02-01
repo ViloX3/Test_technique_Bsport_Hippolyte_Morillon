@@ -41,6 +41,7 @@ function Reservation(props) {
                     onMouseEnter={() => showMemberOnHover()} 
                     onMouseLeave={() => updateIsOnHover(false)}>
                 {activity != null && (<div><div>Activity: {activity.name}</div> <img src={activity.cover_main} /></div>)}
+                {activity == null && (<div>Activity: {props.reservationInfo.activity}</div>)}
                 <div>Level: {level}</div>
                 {establishment != null && <div><div>Place: {establishment.title}</div> {isOnHover && <img src={establishment.cover} />}</div>}
                 {coach != null && <div><div>Coach: {coach.name}</div> {isOnHover && <img src={coach.photo} />} </div> }
